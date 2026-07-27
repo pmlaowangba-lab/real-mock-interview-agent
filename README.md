@@ -72,11 +72,18 @@ git clone https://github.com/ameliapeng-gif/real-mock-interview-agent.git
  
 Or click the green `Code` button → `Download ZIP` and unzip it.
  
-**2. Install into MiniMax Code**
+**2. Install**
  
-Drop the whole folder into MCode's skills directory (Settings → Skills).
+Drop the whole folder into your agent's skills directory:
  
-> This skill leans on two capabilities: **web research** (browser agent) and **spoken questions** (TTS). Any agent that reads `SKILL.md` and can browse will run the core flow, but the voice part calls MiniMax's API.
+| Agent | Where |
+|---|---|
+| **MiniMax Code** (recommended) | Settings → Skills |
+| Claude Code | `~/.claude/skills/` |
+| Claude Desktop / Cowork | Settings → Capabilities → Skills |
+| Anything else that reads `SKILL.md` | See its docs |
+ 
+> Why MiniMax Code is listed first: this skill leans on two capabilities — **web research** to find the real questions, and **spoken questions** via TTS. Any agent that reads `SKILL.md` and can browse will run the core flow, but **voice mode calls MiniMax's API**, so that part only works there. Everything else is portable.
  
 **3. Start**
  
@@ -178,7 +185,16 @@ git clone https://github.com/ameliapeng-gif/real-mock-interview-agent.git
  
 不用命令行的话，点右上角绿色 `Code` → `Download ZIP`，解压即可。
  
-然后把整个文件夹导入 MCode 的 skills 目录（设置 → Skills），说一句：
+然后把整个文件夹放进你的 Agent 的 skills 目录：
+ 
+| Agent | 位置 |
+|---|---|
+| **MiniMax Code**（推荐） | 设置 → Skills |
+| Claude Code | `~/.claude/skills/` |
+| Claude 桌面版 / Cowork | 设置 → Capabilities → Skills |
+| 其他支持 `SKILL.md` 的 | 见各自文档 |
+ 
+装好之后说一句：
  
 ```
 用我这份简历，模拟一轮 BCG 的暑期实习面试
@@ -186,7 +202,7 @@ git clone https://github.com/ameliapeng-gif/real-mock-interview-agent.git
  
 把简历拖进去，说清楚公司和岗位。它会先去查，然后问你要几道题、要不要语音。
  
-> 这个 skill 依赖两个能力：**联网查真题**（浏览器 Agent）和**语音提问**（TTS）。任何支持 SKILL.md 且能联网的 Agent 都能跑核心流程，但语音部分调的是 MiniMax 的接口。
+> 为什么把 MiniMax Code 放第一：这个 skill 依赖两个能力——**联网查真题**和**语音提问**。任何能读 `SKILL.md` 且能联网的 Agent 都能跑核心流程，但**语音调的是 MiniMax 的接口**，只有在那儿能用。其余部分都是通用的。
  
 ### 语音面试
  
@@ -219,4 +235,3 @@ MIT
  
 <!-- If this project came out of a brand collaboration, add a disclosure line here, e.g.:
 Built while testing MiniMax Code. Opinions are my own. -->
- 
