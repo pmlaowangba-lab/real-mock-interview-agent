@@ -1,6 +1,6 @@
 # Real Mock Interview Agent
  
-An AI interviewer that actually **looks up what this company asks ( & format )**,then **actually follows up**.
+An AI interviewer that actually **looks up what this company asks ( & format )**, and supports audio. Audio is what makes pacing, filler words, and your longest pause analyzable. None of that is visible in text, and it's usually the most surprising part of the debrief.
  
 It doesn't pull from a static question list. Tell it you're interviewing at BCG and it goes and reads BCG's own published practice cases and candidate write-ups, works out what this round really tests, and builds from that. Cases, product sense, metric diagnostics, technicals, not just behavioral.
  
@@ -112,7 +112,13 @@ Two ways to answer:
 - **Dictation** (default, zero setup) — press Fn twice on macOS, or the keyboard mic on your phone. Speak, and the text lands in chat.
 - **Recording** (better signal) — `python scripts/record.py`, Enter to stop. Audio is what makes pacing, filler words, and your longest pause analyzable. None of that is visible in text, and it's usually the most surprising part of the debrief.
 Without a key it falls back to text automatically.
- 
+
+  audiogen:
+    - get_voice_list
+    - batch_text_to_audio
+    - batch_text_to_music
+    - synthesize_speech
+    - batch_synthesize_speech
 ---
  
 ## Privacy
