@@ -1,6 +1,6 @@
 # Real Mock Interview Agent
  
-An AI interviewer that actually **looks up what this company asks ( & format )**, and supports audio. Audio is what makes pacing, filler words, and your longest pause analyzable. None of that is visible in text, and it's usually the most surprising part of the debrief.
+An AI interviewer that actually **looks up what this company asks ( & format )**, and **supports audio**. Audio is what makes pacing, filler words, and your longest pause analyzable. None of that is visible in text, and it's usually the most surprising part of the debrief.
  
 It doesn't pull from a static question list. Tell it you're interviewing at BCG and it goes and reads BCG's own published practice cases and candidate write-ups, works out what this round really tests, and builds from that. Cases, product sense, metric diagnostics, technicals, not just behavioral.
  
@@ -113,12 +113,7 @@ Two ways to answer:
 - **Recording** (better signal) — `python scripts/record.py`, Enter to stop. Audio is what makes pacing, filler words, and your longest pause analyzable. None of that is visible in text, and it's usually the most surprising part of the debrief.
 Without a key it falls back to text automatically.
 
-  audiogen:
-    - get_voice_list
-    - batch_text_to_audio
-    - batch_text_to_music
-    - synthesize_speech
-    - batch_synthesize_speech
+
 ---
  
 ## Privacy
@@ -136,7 +131,7 @@ The three most valuable PRs: **real questions from more industries**, **harsher 
  
 ## 中文说明
  
-一个**先上网查这家公司真实面试题**、然后**会追问**的 AI 面试官。
+一个**先上网查这家公司真实面试题**、然后**会追问**的 AI 面试官。包括语音面试，可以分析你的停顿，口头禅，等。
  
 不是从固定题库里抽题——你说要面 BCG，它去把 BCG 官网的 practice case 和候选人回忆帖翻一遍，弄清楚这一轮到底考什么，再开始问。case、product sense、metric 诊断、技术题，不是只有 behavioral。
  
