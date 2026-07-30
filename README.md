@@ -1,10 +1,10 @@
 # Real Mock Interview Agent
  
-An AI interviewer that **looks up what this company actually asks** — then **actually follows up**.
+An AI interviewer that actually **looks up what this company asks ( & format )**,then **actually follows up**.
  
-It doesn't pull from a static question list. Tell it you're interviewing at BCG and it goes and reads BCG's own published practice cases and candidate write-ups, works out what this round really tests, and builds from that. Cases, product sense, metric diagnostics, technicals — not just behavioral.
+It doesn't pull from a static question list. Tell it you're interviewing at BCG and it goes and reads BCG's own published practice cases and candidate write-ups, works out what this round really tests, and builds from that. Cases, product sense, metric diagnostics, technicals, not just behavioral.
  
-Built for **consulting and PM interviews**, where the questions are hardest to practice alone.
+Built mainly for  **consulting and PM interviews**
  
 [中文](#中文说明) · [Quick start](#quick-start) · [What's different](#whats-different)
  
@@ -15,9 +15,9 @@ Built for **consulting and PM interviews**, where the questions are hardest to p
  
 ## What's different
  
-Most AI interview practice has the same three problems: it asks generic questions off a static list, it dumps twenty of them at once, and it praises whatever you say.
+Most AI interview practice has the same three problems: it asks generic questions off a static list, it dumps twenty of them at once, only supports text interaction.
  
-Real interviews are nothing like that. **A McKinsey first round is a case, not a chat.** Amazon scores every question against a Leadership Principle. A PM loop has an entire round that's just "this metric dropped 20% — what now?" Practicing all three with the same generic question set is barely practicing at all.
+Real interviews are nothing like that. **A McKinsey first round is a case** Amazon scores every question against a Leadership Principle. A PM loop has an entire round that's just "this metric dropped 20%...what now?" Practicing all three with the same generic question set is barely practicing at all.
  
 So this skill does three things.
  
@@ -27,11 +27,11 @@ Given a company and a role, it searches for how that company really interviews a
  
 If it can't find anything, it says so and falls back to the built-in banks. It won't invent a plausible-sounding process to cover the gap.
  
-**2. One question at a time — and it probes**
+**2. Supports Audio. Asks one question at a time,and it probes**
  
-No previews, no mid-interview coaching. Vague answers, team credit taken as personal credit, results with no numbers — all draw a follow-up. Roughly half of all answers do, which is the ratio that makes it feel real.
- 
-The follow-up is where most people actually fall apart, and it's the part practice usually skips.
+No previews, no mid-interview coaching. Vague answers, team credit taken as personal credit, results with no numbers, all draw a follow-up. Roughly half of all answers do, which is the ratio that makes it feel real. The follow-up is where most people actually fall apart, and it's the part practice usually skips.
+
+The audio analysis feature allows it to analyze your phrases like "umm", "er", etc. Better help with presentation and speaking skills!
  
 **3. It scores honestly**
  
