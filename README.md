@@ -1,3 +1,20 @@
+# 豆包工作安装入口
+
+本仓库是 ameliapeng-gif/real-mock-interview-agent 的 MIT fork，保留原作者版权和许可证。仓库名是 real-mock-interview-agent；SKILL.md 的实际技能名是 mock-interview。
+
+```text
+请从 GitHub 用户 pmlaowangba-lab 的仓库 real-mock-interview-agent 安装 Skill。
+仓库地址：https://github.com/pmlaowangba-lab/real-mock-interview-agent
+读取根目录 SKILL.md，将完整技能包（包括 scripts、references 等文件）安装到当前工作区 .agents/skills/mock-interview/。
+安装后检查技能名 mock-interview 和依赖文件，尝试识别并调用，返回安装路径和识别结果。不能识别时说明需要配置的目录或刷新步骤，不要仅以下载成功宣称安装完成。
+```
+
+使用：`用 mock-interview，模拟目标公司岗位，一次一题并深度追问，结束后输出评估报告。`
+
+联网搜索与浏览器能力由客户端提供，需实际可用。以下保留原项目说明。
+
+---
+
 # Real Mock Interview Agent
  
 An AI interviewer that actually **looks up what this company asks ( & format )**, and **supports audio**. Audio is what makes pacing, filler words, and your longest pause analyzable. None of that is visible in text, and it's usually the most surprising part of the debrief.
